@@ -12,8 +12,8 @@ public class erroLog {
 		
 		//THESE CREATE THE FILE AND FILEWRITER OBJECTS
 		File errorLogs = new File("errorLogs.txt"); //BY DEFAULT SHOULD CREATE errorLogs.txt FILE IN FOLDER OUTSIDE OF WHERE JAVA CLASS FILE IS LOCATED, SPECIFY PATH TO CHANGE
-		/* PATH FORMAT FOR MAC: folder/folder/folder/folder/fileName.txt
-  		   PATH FORMAT FOR WINDOWS: DRIVE:\\folder\\folder\\folder\\folder\\fileName.txt
+		/* PATH FORMAT FOR MAC: folder/folder/folder/folder/fileName.txt. Replace 'folder' with desired folders, ie "user", "documents", "desktop", etc.
+  		   PATH FORMAT FOR WINDOWS: DRIVE:\\folder\\folder\\folder\\folder\\fileName.txt (Change drive to respective drive, ie C:, D:, H: etc, replace 'folder' with desired folders, ie "user", "documents", "desktop", etc.
   		*/
         	FileWriter errorWriter = new FileWriter(errorLogs, true); 
 		
