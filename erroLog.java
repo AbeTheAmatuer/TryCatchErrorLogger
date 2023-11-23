@@ -1,10 +1,10 @@
 package errorLog;
 
+//STUFF YOU NEED TO IMPORT
 import java.util.concurrent.TimeUnit;
 import java.io.FileWriter;   
 import java.io.IOException;  
 import java.io.File;
-import java.time.LocalDateTime;    
 import java.time.LocalDateTime;    
 
 public class erroLog {
@@ -12,7 +12,7 @@ public class erroLog {
 		
 		//THESE CREATE THE FILE AND FILEWRITER OBJECTS
 		File errorLogs = new File("errorLogs.txt");
-        FileWriter errorWriter = new FileWriter(errorLogs, true); // SAME HERE
+        	FileWriter errorWriter = new FileWriter(errorLogs, true); // SAME HERE
 		
         //THIS IS THE TRY AND CATCH BLOCK WHICH CATCHES AND STORES ANY ERRORS
         try {
@@ -20,11 +20,10 @@ public class erroLog {
         } catch (Exception e) {
         	LocalDateTime now = LocalDateTime.now();
         	e.printStackTrace();
-        	System.out.println("Error");
-            errorWriter.write("ERROR: " + e + "\nDate and Time: " + now + "\n-----------------\n");
-            errorWriter.close();
-    }
-	}
+            	errorWriter.write("ERROR: " + e + "\nDate and Time: " + now + "\n-----------------\n");
+            	errorWriter.close();
+    	}
+     }
 }
 
 /* THIS WILL ONLY WORK WITH ERRORS THAT ARE AFFECTED BY THE TRY-CATCH BLOCK
