@@ -11,8 +11,11 @@ public class erroLog {
 	public static void main(String [] args) throws Exception{
 		
 		//THESE CREATE THE FILE AND FILEWRITER OBJECTS
-		File errorLogs = new File("errorLogs.txt");
-        	FileWriter errorWriter = new FileWriter(errorLogs, true); // SAME HERE
+		File errorLogs = new File("errorLogs.txt"); //BY DEFAULT SHOULD CREATE errorLogs.txt FILE IN FOLDER OUTSIDE OF WHERE JAVA CLASS FILE IS LOCATED, SPECIFY PATH TO CHANGE
+		/* PATH FORMAT FOR MAC: folder/folder/folder/folder/fileName.txt
+  		   PATH FORMAT FOR WINDOWS: DRIVE:\\folder\\folder\\folder\\folder\\fileName.txt
+  		*/
+        	FileWriter errorWriter = new FileWriter(errorLogs, true); 
 		
         //THIS IS THE TRY AND CATCH BLOCK WHICH CATCHES AND STORES ANY ERRORS
         try {
