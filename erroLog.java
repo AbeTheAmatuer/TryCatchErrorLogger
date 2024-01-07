@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.File;
 import java.time.LocalDateTime;    
 
-public class erroLog {
+public class errorLog {
 	public static void main(String [] args) throws Exception{
 		
 		//THESE CREATE THE FILE AND FILEWRITER OBJECTS
